@@ -4,10 +4,10 @@
     "description": "project template for sveltekit",
     "private": true,
     "author": "Jonas Froeller",
-    "homepage": "",
+    "homepage": "https://svelte-kit-project-template.vercel.app",
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/jonasfroeller/SvelteKit_ProjectTemplate"
     },
     "keywords": [
         "template",
