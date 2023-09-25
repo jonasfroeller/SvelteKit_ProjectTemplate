@@ -12,9 +12,9 @@
 
 The project can be deployed to Vercel, Netlify or Cloudflare-Pages.
 
+[![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=svelte-kit-project-template.vercel.app)](https://svelte-kit-project-template.vercel.app)
+![CloudflarePages](https://img.shields.io/website/https/sveltekit-projecttemplate.pages.dev?logo=cloudflarepages&label=cloudlare)
 ![Netlify](https://img.shields.io/website/https/svelte-kit-project-template.netlify.app?logo=netlify&label=netlify)
-![Vercel](https://img.shields.io/website/https/svelte-kit-project-template.vercel.app?logo=vercel&label=vercel)
-![CloudflarePages](https://img.shields.io/website/https/svelte-kit-project-template.pages.dev?logo=cloudflarepages&label=cloudlare)
 
 ## Tech Stack
 
