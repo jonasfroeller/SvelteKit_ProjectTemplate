@@ -18,19 +18,22 @@ The project can be deployed to Vercel, Netlify or Cloudflare-Pages.
 
 ## Tech Stack
 
-* **JS-Framework**: [SvelteKit](https://kit.svelte.dev/docs/creating-a-project)
-* **CSS-Utility-Class-Library**: [TailwindCSS](https://tailwindcss.com/docs/guides/sveltekit)
-  * *Including*: [@tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin)
-* **Translation**: [typesafe-i18n](https://github.com/ivanhofer/typesafe-i18n)
-* **Form-Validation**: [sveltekit-superforms & zod](https://github.com/ciscoheat/sveltekit-superforms)
-* **Icons**: [iconify](https://iconify.design/docs/icon-components/svelte/)
-* **UI-Components**: [shadcn-svelte](https://github.com/huntabyte/shadcn-svelte)
-* **Commits**: [commitizen/cz-conventional-changelog](https://github.com/commitizen/cz-cli)
-* **Testing**:
-  * Unit: [Vitest](https://vitest.dev/)
-  * Browser: [Playwright](https://playwright.dev/)
-* **Code-Formatting**: [Prettier](https://prettier.io/)
-* **Code-Linting**: [Eslint](https://eslint.org/)
+-   **JS-Framework**: [SvelteKit](https://kit.svelte.dev/docs/creating-a-project)
+-   **CSS-Utility-Class-Library**: [TailwindCSS](https://tailwindcss.com/docs/guides/sveltekit)
+    -   [@tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin)
+    -   [@tailwindcss/aspect-ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio)
+    -   [@tailwindcss/container-queries](https://github.com/tailwindlabs/tailwindcss-container-queries)
+-   **Translation**: [typesafe-i18n](https://github.com/ivanhofer/typesafe-i18n)
+-   **Icons**: [iconify](https://iconify.design/docs/icon-components/svelte/)
+-   **UI-Components**: [shadcn-svelte](https://github.com/huntabyte/shadcn-svelte)
+-   **Code-Formatting**: [Prettier](https://prettier.io/)
+-   **Code-Linting**: [Eslint](https://eslint.org/)
+-   **Accessibility**: [autoprefixer](https://www.npmjs.com/package/autoprefixer), [rtlcss](https://www.npmjs.com/package/rtlcss)
+-   **Performance**: [html-minifier](https://www.npmjs.com/package/html-minifier)
+
+### Assets
+
+**Fonts (google fonts but privacy-friendly)**: [api.fonts.coollabs.io](https://docs.coollabs.io/fonts/get-started)
 
 ## Development
 
@@ -55,4 +58,13 @@ npm run preview
 
 ## Contributing
 
-Use `npm run commit` instead of `git commit -m "..."`
+Install [commitizen](https://github.com/commitizen/cz-cli)
+
+```bash
+pnpm add -g commitizen
+```
+
+#### Usage
+
+Use `pnpm run commit` or `npx cz` instead of `git commit -m "..."`  
+Use `pnpm run prepare` before committing the first time.
