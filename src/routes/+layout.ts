@@ -1,0 +1,16 @@
+import type { LayoutLoad } from './$types';
+import type { Locales } from '$translation/i18n-types';
+import { loadLocaleAsync } from '$translation/i18n-util.async';
+import { i18nObject } from '$translation/i18n-util.js';
+
+export const load: LayoutLoad<{ locale: Locales }> = async ({ data: { locale } }) => {
+	// load dictionary into memory
+	await loadLocaleAsync(locale);
+	// if you need to output a localized string in a `load` function,
+	// you always need to create a new `i18nObject` instance in each `load` function
+	// to not run into shared server state issues
+	i18nObject(locale);
+
+	// pass locale to the "rendering context"
+	return { locale };
+};

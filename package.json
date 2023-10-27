@@ -61,6 +61,7 @@
 	"type": "module",
 	"dependencies": {
 		"@tailwindcss/container-queries": "^0.1.1",
+		"bits-ui": "^0.8.3",
 		"clsx": "^2.0.0",
 		"lucide-svelte": "^0.268.0",
 		"tailwind-merge": "^1.14.0",

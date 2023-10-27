@@ -1,7 +1,7 @@
 import type { BaseTranslation } from '../i18n-types';
 
 const en = {
-	// english translations
+	greeting: 'Hello'
 } satisfies BaseTranslation;
 
 export default en;

@@ -1,7 +1,7 @@
 import type { Translation } from '../i18n-types';
 
 const de = {
-	// german translations
+	greeting: 'Hallo'
 } satisfies Translation;
 
 export default de;
