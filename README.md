@@ -61,10 +61,10 @@ npm run preview
 Install [commitizen](https://github.com/commitizen/cz-cli)
 
 ```bash
-pnpm add -g commitizen
+npm add -g commitizen
 ```
 
-#### Usage
+### Usage of Commitizen
 
-Use `pnpm run commit` or `npx cz` instead of `git commit -m "..."`  
-Use `pnpm run prepare` before committing the first time.
+Use `npm run commit` or `npx cz` instead of `git commit -m "..."`  
+Use `npm run prepare` before committing the first time.
