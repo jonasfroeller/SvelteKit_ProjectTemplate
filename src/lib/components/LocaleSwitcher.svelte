@@ -45,17 +45,12 @@
 	}
 
 	$: if (browser) {
-		const lang = $page.params.lang as Locales;
+		const urlLang = $page.params.lang as Locales;
+		const selectedLang = selectedLanguage?.value as Locales;
+
+		const lang = selectedLang || urlLang;
 
 		updateLocale(lang);
-	}
-
-	$: {
-		if (selectedLanguage && browser) {
-			const lang = selectedLanguage.value as Locales;
-
-			updateLocale(lang);
-		}
 	}
 
 	let selectedLanguage = { value: 'en' };
